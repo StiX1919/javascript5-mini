@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-export function Movie() {
-  return (
-      <p>{movie}</p>
-  )  
-}
+export default class Movie extends Component {
+  constructor(props) {
+    super(props)
+  }
+  render() {
+    return (
+      <p>{this.props.movie}</p>
+    )  
+  }
+} 
